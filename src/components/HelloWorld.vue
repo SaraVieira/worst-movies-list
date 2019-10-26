@@ -3,7 +3,7 @@
     <ul>
       <li v-for="movie in movies" v-bind:key="movie._id">
         <span class="title">{{movie.title}}</span>
-        <span>Rating: {{movie.rating}}/10</span>
+        <span class="rating">{{movie.rating}}/10</span>
       </li>
     </ul>
   </div>
@@ -727,6 +727,10 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+}
+
+.rating {
+  color: lightcoral;
 }
 
 .title {
